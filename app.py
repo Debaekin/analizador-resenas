@@ -39,7 +39,7 @@ def traducir_a_ingles(texto):
     respuesta.raise_for_status()
     return respuesta.json()[0]["translations"][0]["text"]
 
-    ETIQUETAS = {
+ETIQUETAS = {
     "positive": ("Positivo", "😊"),
     "neutral": ("Neutral", "😐"),
     "negative": ("Negativo", "😞"),
